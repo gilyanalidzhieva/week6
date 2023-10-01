@@ -1,0 +1,50 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+header {
+    background-color: rgb(180, 178, 178);
+    grid-column: 1/5;
+    text-align: center;
+}
+
+main {
+    background-color: rgb(255, 215, 192);
+    grid-column: 1/4;
+    }
+
+.main2 {
+    text-align: center;
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem 2rem;
+}
+
+.other1, .other2 {
+    flex: 0 1 calc(50% - 1rem);
+    background-color: pink;
+    text-align: center;
+}
+
+.other3 {
+    background-color: pink;
+    flex-grow: 1;
+    text-align: center;
+}
+
+aside {
+    background-color: rgb(180, 248, 225);
+    text-align: center;
+}
+
+footer {
+    background-color: rgb(177, 172, 172);
+    grid-column: 1/5;
+    display: flex;
+    justify-content: space-around;
+}
+
